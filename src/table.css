@@ -1,0 +1,15 @@
+.table {
+  margin-top: 20px;
+  overflow: scroll;
+  height: 300px;
+  font-size: 13.5px;
+  font-weight: 450;
+}
+.table > tr:nth-of-type(odd) {
+  background-color: #f3f2fb;
+}
+.table tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
