@@ -4,7 +4,7 @@ import { Card, CardContent, Typography } from "@mui/material";
 
 function InfoBox({ title, cases, total, ...props }) {
   return (
-    <Card  onClick={...props.onClick} className="infobox">
+    <Card onClick={props.onClick} className="infobox">
       <CardContent className="card__info">
         <Typography className="infoBox__title" color="textSecondary">
           {title}
