@@ -84,7 +84,6 @@ function Graph() {
   }, []);
   return (
     <div>
-      <h4>I am A Graph</h4>
       {data?.length > 0 && (
         <Line
           options={options}

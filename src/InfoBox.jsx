@@ -2,15 +2,17 @@ import React from "react";
 import "./InfoBox.css";
 import { Card, CardContent, Typography } from "@mui/material";
 
-function InfoBox({ title, cases, total }) {
+function InfoBox({ title, cases, total, ...props }) {
   return (
-    <Card className="infobox">
+    <Card  onClick={...props.onClick} className="infobox">
       <CardContent className="card__info">
-        <Typography className="card__info_p" color="textSecondary">
+        <Typography className="infoBox__title" color="textSecondary">
           {title}
         </Typography>
-        <h2>{cases}</h2>
-        <Typography className="card__info_p">{total} total</Typography>
+        <Typography className=" infoBox__cases">
+          <h2>{cases}</h2>
+        </Typography>
+        <Typography className="infoBox__total">{total} total</Typography>
       </CardContent>
     </Card>
   );

@@ -5,6 +5,9 @@
   font-size: 13.5px;
   font-weight: 450;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 .table > tr:nth-of-type(odd) {
   background-color: #f3f2fb;
 }

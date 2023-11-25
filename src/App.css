@@ -62,3 +62,6 @@ body::-webkit-scrollbar {
     justify-content: space-between;
   }
 }
+.home__table {
+  margin-bottom: 5px;
+}
