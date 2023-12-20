@@ -98,18 +98,21 @@ function App() {
         </div>
         <div className="info__container">
           <InfoBox
+            className="info__box"
             onClick={(event) => setCasesType("cases")}
-            title="Coronavirus Cases"
+            title="Cases"
             cases={prettyPrintStat(conutryInfo.todayCases)}
             total={prettyPrintStat(conutryInfo.cases)}
           />
           <InfoBox
+            className="info__box"
             onClick={(event) => setCasesType("recovered")}
             title="Recovery"
             cases={prettyPrintStat(conutryInfo.todayRecovered)}
             total={prettyPrintStat(conutryInfo.recovered)}
           />
           <InfoBox
+            className="info__box"
             onClick={(event) => setCasesType("deaths")}
             title="Deaths"
             cases={prettyPrintStat(conutryInfo.todayDeaths)}
